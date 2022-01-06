@@ -7,7 +7,7 @@
     <meta name="description" content="{{ seoDescription }}" >
     <meta name="author" content="{{ author }}" >
     <meta name="keywords" content="{{ seoKeywords }} , {{ leadActors }}" >
-    <title>Net Blog | {{ title }} </title>
+    <title>Net Blog | {{ title | title }} </title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/vendor.css">
     </head>
@@ -22,31 +22,31 @@
                 <div class="grid-sizer"></div>
                   <article class="brick entry" data-animate-el>                  
                     <div class="entry__thumb">
-                    <h2 class="headings" >Download {{ movieName }} </h2>
+                    <h2 class="headings" >Download {{ movieName | title }} </h2>
                       <a href="{{ post.url }}" class="thumb-link"> 
-                        <img class="movieimage" href="{{ post.url }}" src="{{ image }}" alt="{{ imageAlt }}">
+                        <img class="movieimage" href="{{ post.url }}" src="{{ image }}" alt="{{ imageAlt | title }}">
                       </a>
                     </div> 
                   <div class="entry__text">
                     <div class="entry__header"> 
                       <div class="entry__meta"> 
                         <span class="cat-links"> 
-                          <a href="/category/{{ category }}/" >{{ category }}</a>
+                          <a href="/category/{{ category | lower }}/" >{{ category }}</a>
                         </span> 
                         <span class="byline"> 
-                             By: <a href="#0">{{ author }} on {{ date | postDate }}</a>
+                             By: <a href="#0">{{ author | title }} on {{ date | postDate }}</a>
                         </span> 
                       </div>                         
                     </div>                      
                   </div> 
                   <div class="entry__text">                              
-    Download {{ movieName }} Released On {{ releaseDate }} in {{ maxQuality }} in {{ languageAvailable }}
+    Download {{ movieName | title }} Released On {{ releaseDate }} in {{ maxQuality }} in {{ languageAvailable | capitalize }}
     </div>               
 </article>
                 </div>
                 {{ content | safe }}
               </div>
-              <a href="{{ movieLink }}" class="the-link" target="_blank" >Download {{ movieName }}</a>
+              <a href="{{ movieLink }}" class="the-link" target="_blank" >Download {{ movieName | title }}</a>
             </div>
           </section>
             {% include "footer.njk" %}
