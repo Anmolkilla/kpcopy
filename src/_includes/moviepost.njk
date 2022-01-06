@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="tilte" content="{{ seoTitle }}" >
-    <meta name="description" content="{{ seoDescription }}" >
+    <meta name="tilte" content="{{ seoTitle | title }}" >
+    <meta name="description" content="{{ seoDescription | title }}" >
     <meta name="author" content="{{ author }}" >
-    <meta name="keywords" content="{{ seoKeywords }} , {{ leadActors }}" >
+    <meta name="keywords" content="{{ seoKeywords | title }} , {{ leadActors | title }}" >
     <title>Net Blog | {{ title | title }} </title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/vendor.css">
@@ -44,7 +44,7 @@
     </div>               
 </article>
                 </div>
-                {{ content | safe }}
+                {{ content | safe | title }}
               </div>
               <a href="{{ movieLink }}" class="the-link" target="_blank" >Download {{ movieName | title }}</a>
             </div>
