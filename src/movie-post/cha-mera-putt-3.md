@@ -29,7 +29,7 @@ draft: true
 tagsmovie:
   - post
   - movie
-image: /assets/blog/chalmeraputt3.jpeg
+image: /assets/blog/chalmeraputt3-1-.jpeg
 imageAlt: Chal Mera Putt 3
 movieLink: http://urlshortx.in/7XA8pQw
 ---
