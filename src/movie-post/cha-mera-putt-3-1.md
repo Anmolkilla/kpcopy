@@ -28,7 +28,7 @@ date: 2022-01-14T03:59:12.198Z
 draft: true
 image: /assets/blog/chalmeraputt3-1-.jpeg
 imageAlt: Pani Ch Madhani
-movieLink: http://urlshortx.in/7XA8pQw
+movieLink: http://urlshortx.in/hYBo
 tagsmovie:
   - post
   - movie
