@@ -26,7 +26,7 @@ geners:
   - Drama
 date: 2022-01-14T03:59:12.198Z
 draft: true
-image: /assets/blog/chalmeraputt3-1-.jpeg
+image: /assets/blog/panichmadhani.jpeg
 imageAlt: Pani Ch Madhani
 movieLink: http://urlshortx.in/hYBo
 tagsmovie:
